@@ -3,20 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name - Portfolio</title>
+    <title>Blog - Your Name</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="social.css">
-    <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="topNab.css"> <!-- Link to the topNav.css (radio button navigation styles) -->
+    <link rel="stylesheet" href="blog.css">
+    <link rel="stylesheet" href="social.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-  <header>
+<header>
   <!-- Radio Button Navigation -->
   <input type="checkbox" id="theme-mode" class="mode" hidden="" />
   <div class="container">
     <div class="wrap">
-      <input checked="" type="radio" id="rd-1" name="radio" class="rd-1" hidden="" />
+      <input type="radio" id="rd-1" name="radio" class="rd-1" hidden="" />
       <label for="rd-1" class="label" style="--index: 0;" data-link="index.html">
         <span>Home</span>
       </label>
@@ -41,7 +41,7 @@
         <span>Projects</span>
       </label>
 
-      <input type="radio" id="rd-6" name="radio" class="rd-6" hidden="" />
+      <input checked="" type="radio" id="rd-6" name="radio" class="rd-6" hidden="" />
       <label for="rd-6" class="label" style="--index: 5;" data-link="blog.html">
         <span>Blog</span>
       </label>
@@ -78,28 +78,43 @@
   </header>
 
     <main>
-        <section id="hero">
-  <div class="homep-container">
-    <div class="homep-main">
-      <img src="humanai2.png" alt="Profile Photo" class="homep-photo" />
-      <div class="homep-text">
-        <h1 class="homep-name">Mandip Rijal</h1>
-        <h2 class="homep-subheading">Web Developer</h2>
-        <p class="homep-description">
-          I am a programmer passionate about coding on both front and back-end programming languages. I focus on delivering meaningful
-          solutions with a deep interest in innovation, creativity, and technology.
-        </p>
-      </div>
-    </div>
+        <div class="mandip-container">
+    <h1 class="mandip-title">My Journey to Becoming a Programmer</h1>
+    <p class="mandip-meta">June 3, 2025 — By Mandip Rijal</p>
 
-    <div class="homep-links">
-      <a href="experiences.html" class="homep-circle-link">Resume</a>
-      <a href="projects.html" class="homep-circle-link">Projects</a>
-      <a href="education.html" class="homep-circle-link">Education</a>
-      <a href="contact.html" class="homep-circle-link">Contact</a>
-    </div>
+    <section class="mandip-section">
+      <h2 class="mandip-heading">Introduction</h2>
+      <p>Hello! I'm <strong>Mandip Rijal</strong>, a Bachelor of Information Systems student with a passion for programming. Ever since I started learning about technology, I've been fascinated by how code can bring ideas to life. This blog post shares my background, skills, goals, and motivations as I work toward becoming a programmer.</p>
+    </section>
+
+    <section class="mandip-section">
+      <h2 class="mandip-heading">Skills</h2>
+      <ul>
+        <li><strong>Programming Languages:</strong> Python, JavaScript, Java</li>
+        <li><strong>Web Development:</strong> HTML, CSS, basic JavaScript</li>
+        <li><strong>Databases:</strong> SQL fundamentals, database design</li>
+        <li><strong>Tools:</strong> Git, GitHub, VS Code, basic Linux</li>
+        <li><strong>Soft Skills:</strong> Problem-solving, teamwork, communication</li>
+      </ul>
+    </section>
+
+    <section class="mandip-section">
+      <h2 class="mandip-heading">Goals</h2>
+      <ol>
+        <li>Finish my degree with strong development skills.</li>
+        <li>Build a personal portfolio site to showcase my work.</li>
+        <li>Gain internship experience.</li>
+        <li>Learn advanced topics like data structures.</li>
+        <li>Contribute to open-source projects.</li>
+      </ol>
+    </section>
+
+    <section class="mandip-section">
+      <h2 class="mandip-heading">Motivation</h2>
+      <p>I’ve always loved solving problems, which makes programming exciting for me. I enjoy turning ideas into something real and useful through code. It’s both creative and logical, and I find that balance very motivating.</p>
+      <p>My goal is to develop real-world applications that help people, and to keep learning and growing as a future software developer.</p>
+    </section>
   </div>
-        </section>
     </main>
 
   <div class="social-card-container">
@@ -141,12 +156,6 @@
     </a>
 
   </div>
-    <section id="about-section">
-    <h2>About Us</h2>
-    <p>Some information about our company...</p>
-</section>
-
-<a href="#about-section">Go to About Us</a>
-
+    
 </body>
 </html>

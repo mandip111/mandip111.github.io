@@ -3,20 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name - Portfolio</title>
+    <title>Hobbies - Your Name</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="hobbytable.css">
     <link rel="stylesheet" href="social.css">
-    <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="topNab.css"> <!-- Link to the topNav.css (radio button navigation styles) -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-<body>
   <header>
   <!-- Radio Button Navigation -->
   <input type="checkbox" id="theme-mode" class="mode" hidden="" />
   <div class="container">
     <div class="wrap">
-      <input checked="" type="radio" id="rd-1" name="radio" class="rd-1" hidden="" />
+      <input type="radio" id="rd-1" name="radio" class="rd-1" hidden="" />
       <label for="rd-1" class="label" style="--index: 0;" data-link="index.html">
         <span>Home</span>
       </label>
@@ -46,7 +45,7 @@
         <span>Blog</span>
       </label>
 
-      <input type="radio" id="rd-7" name="radio" class="rd-7" hidden="" />
+      <input checked="" type="radio" id="rd-7" name="radio" class="rd-7" hidden="" />
       <label for="rd-7" class="label" style="--index: 6;" data-link="hobbies.html">
         <span>Hobbies</span>
       </label>
@@ -78,28 +77,19 @@
   </header>
 
     <main>
-        <section id="hero">
-  <div class="homep-container">
-    <div class="homep-main">
-      <img src="humanai2.png" alt="Profile Photo" class="homep-photo" />
-      <div class="homep-text">
-        <h1 class="homep-name">Mandip Rijal</h1>
-        <h2 class="homep-subheading">Web Developer</h2>
-        <p class="homep-description">
-          I am a programmer passionate about coding on both front and back-end programming languages. I focus on delivering meaningful
-          solutions with a deep interest in innovation, creativity, and technology.
-        </p>
-      </div>
-    </div>
-
-    <div class="homep-links">
-      <a href="experiences.html" class="homep-circle-link">Resume</a>
-      <a href="projects.html" class="homep-circle-link">Projects</a>
-      <a href="education.html" class="homep-circle-link">Education</a>
-      <a href="contact.html" class="homep-circle-link">Contact</a>
-    </div>
-  </div>
-        </section>
+  <table class="hobby-table">
+    <thead>
+      <tr>
+        <th>My Hobbies</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td>Cricket</td></tr>
+      <tr><td>Travelling</td></tr>
+      <tr><td>Drawing</td></tr>
+      <tr><td>Online Games</td></tr>
+    </tbody>
+  </table>
     </main>
 
   <div class="social-card-container">
@@ -141,12 +131,5 @@
     </a>
 
   </div>
-    <section id="about-section">
-    <h2>About Us</h2>
-    <p>Some information about our company...</p>
-</section>
-
-<a href="#about-section">Go to About Us</a>
-
 </body>
 </html>

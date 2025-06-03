@@ -3,20 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name - Portfolio</title>
+    <title>Experience - Your Name</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="resume.css">
     <link rel="stylesheet" href="social.css">
-    <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="topNab.css"> <!-- Link to the topNav.css (radio button navigation styles) -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-  <header>
+   <header>
   <!-- Radio Button Navigation -->
   <input type="checkbox" id="theme-mode" class="mode" hidden="" />
   <div class="container">
     <div class="wrap">
-      <input checked="" type="radio" id="rd-1" name="radio" class="rd-1" hidden="" />
+      <input type="radio" id="rd-1" name="radio" class="rd-1" hidden="" />
       <label for="rd-1" class="label" style="--index: 0;" data-link="index.html">
         <span>Home</span>
       </label>
@@ -26,7 +26,7 @@
         <span>About</span>
       </label>
 
-      <input type="radio" id="rd-3" name="radio" class="rd-3" hidden="" />
+      <input checked="" type="radio" id="rd-3" name="radio" class="rd-3" hidden="" />
       <label for="rd-3" class="label" style="--index: 2;" data-link="experiences.html">
         <span>Experiences</span>
       </label>
@@ -78,28 +78,59 @@
   </header>
 
     <main>
-        <section id="hero">
-  <div class="homep-container">
-    <div class="homep-main">
-      <img src="humanai2.png" alt="Profile Photo" class="homep-photo" />
-      <div class="homep-text">
-        <h1 class="homep-name">Mandip Rijal</h1>
-        <h2 class="homep-subheading">Web Developer</h2>
-        <p class="homep-description">
-          I am a programmer passionate about coding on both front and back-end programming languages. I focus on delivering meaningful
-          solutions with a deep interest in innovation, creativity, and technology.
-        </p>
-      </div>
-    </div>
+  <div class="jm-resume-wrapper">
+    <div id="jm-resume">
+      <h1>Mandip Rijal</h1>
+      <p><strong>Email:</strong> mandip.m@protonmail.com</p>
+      <p><strong>Phone:</strong> (000) 000-0000</p>
+      <h2>Profile</h2>
+      <p>Friendly and organized data entry clerk with a solid background in email support and debugging. Adept at ensuring accuracy, solving customer queries, and improving workflow efficiency.</p>
 
-    <div class="homep-links">
-      <a href="experiences.html" class="homep-circle-link">Resume</a>
-      <a href="projects.html" class="homep-circle-link">Projects</a>
-      <a href="education.html" class="homep-circle-link">Education</a>
-      <a href="contact.html" class="homep-circle-link">Contact</a>
+      <h2>Professional Experience</h2>
+
+      <h3>Licrosoft Inc.</h3>
+      <p><em>Data Entry Clerk – Remote (Jan 2024 – Apr 2024)</em></p>
+      <ul>
+        <li>Processed customer feedback and logged cases using CRM tools.</li>
+        <li>Entered data from various sources into internal databases with 99.9% accuracy.</li>
+        <li>Ensured completeness and correctness of digital records.</li>
+      </ul>
+
+      <h3>Dapple Support Systems</h3>
+      <p><em>Email Support Agent (May 2024 – Aug 2024)</em></p>
+      <ul>
+        <li>Responded to customer emails with professionalism and empathy.</li>
+        <li>Resolved billing, login, and subscription-related issues.</li>
+        <li>Tagged common inquiries to improve FAQ auto-responses.</li>
+      </ul>
+
+      <h3>Kamazon Tech</h3>
+      <p><em>Debugging Assistant (Sept 2024 – Present)</em></p>
+      <ul>
+        <li>Identified and documented software bugs in internal tools.</li>
+        <li>Collaborated with developers to reproduce and fix issues.</li>
+        <li>Used browser dev tools and JavaScript to verify fixes.</li>
+      </ul>
+
+      <h2>Education</h2>
+      <p><strong>Bachelor of Information Systems</strong> – Australian Institute of Technology (2023 – 2026)</p>
+
+      <h2>Skills</h2>
+      <ul>
+        <li>Typing Speed: 75+ WPM</li>
+        <li>Microsoft Office Suite (Excel, Word, Outlook)</li>
+        <li>HTML, CSS, JavaScript (debugging, editing)</li>
+        <li>Customer Service & Email Etiquette</li>
+      </ul>
+
+      <h2>References</h2>
+      <p><strong>Manager: Jess Timsin</strong></p>
+      <p>Email: j.timsin@kamazon.com</p>
     </div>
   </div>
-        </section>
+    </main>
+    <br>
+
     </main>
 
   <div class="social-card-container">
@@ -141,12 +172,5 @@
     </a>
 
   </div>
-    <section id="about-section">
-    <h2>About Us</h2>
-    <p>Some information about our company...</p>
-</section>
-
-<a href="#about-section">Go to About Us</a>
-
 </body>
 </html>

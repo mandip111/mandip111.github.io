@@ -1,0 +1,116 @@
+.social-card-container {
+  position: relative;
+  width: min(25vw, 200px);
+  aspect-ratio: 1 / 1;
+  background: #1f1f1f;
+  border-radius: 30px;
+  overflow: hidden;
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 7px 29px 0px;
+  transition: all 1s ease-in-out;
+  border: 2px solid #000000;
+}
+
+.social-card-background {
+  position: absolute;
+  inset: 0;
+  background-image: linear-gradient(43deg, #a8d0f0 0%, #337ab7 40%, #000080 80%, #000000 100%);
+}
+
+.social-card-logo {
+  position: absolute;
+  right: 50%;
+  bottom: 50%;
+  transform: translate(50%, 50%);
+  transition: all 0.6s ease-in-out;
+  font-size: 1.3em;
+  font-weight: 600;
+  color: #000000;
+  letter-spacing: 3px;
+}
+
+.social-card-icon {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+}
+
+.social-card-svg {
+  fill: rgba(0, 0, 0, 0.8);
+  width: 100%;
+  transition: all 0.5s ease-in-out;
+}
+
+.social-card-box {
+  position: absolute;
+  padding: 10px;
+  text-align: right;
+  background: rgba(255, 255, 255, 0.2);
+  border-top: 2px solid rgb(0, 0, 0);
+  border-right: 1px solid rgb(0, 0, 0);
+  border-radius: 10% 13% 42% 0%/10% 12% 75% 0%;
+  transform-origin: bottom left;
+  transition: all 1s ease-in-out;
+}
+
+.social-card-box::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+}
+
+.social-card-box:hover .social-card-svg {
+  fill: white;
+  filter: drop-shadow(0 0 5px white);
+}
+
+.social-card-box1 {
+  width: 70%;
+  height: 70%;
+  bottom: -70%;
+  left: -70%;
+}
+
+.social-card-box1::before {
+  background: radial-gradient(circle at 30% 107%, #fceabb 0%, #f8b500 90%);
+}
+
+.social-card-box2 {
+  width: 50%;
+  height: 50%;
+  bottom: -50%;
+  left: -50%;
+  transition-delay: 0.2s;
+}
+
+.social-card-box2::before {
+  background: radial-gradient(circle at 30% 107%, #91e9ff 0%, #00ACEE 90%);
+}
+
+.social-card-box3 {
+  width: 30%;
+  height: 30%;
+  bottom: -30%;
+  left: -30%;
+  transition-delay: 0.4s;
+}
+
+.social-card-box3::before {
+  background: radial-gradient(circle at 30% 107%, #7289da 0%, #5865F2 90%);
+}
+
+.social-card-container:hover {
+  transform: scale(1.1);
+}
+
+.social-card-container:hover .social-card-box {
+  bottom: -1px;
+  left: -1px;
+}
+
+.social-card-container:hover .social-card-logo {
+  transform: translate(70px, -52px);
+  letter-spacing: 0;
+}

@@ -3,20 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name - Portfolio</title>
+    <title>Projects - Mandip Rijal</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="social.css">
-    <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="topNab.css"> <!-- Link to the topNav.css (radio button navigation styles) -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-</head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" /> 
+  </head>
 <body>
-  <header>
+  <header style="margin-bottom: 50px;">
   <!-- Radio Button Navigation -->
   <input type="checkbox" id="theme-mode" class="mode" hidden="" />
   <div class="container">
     <div class="wrap">
-      <input checked="" type="radio" id="rd-1" name="radio" class="rd-1" hidden="" />
+      <input type="radio" id="rd-1" name="radio" class="rd-1" hidden="" />
       <label for="rd-1" class="label" style="--index: 0;" data-link="index.html">
         <span>Home</span>
       </label>
@@ -36,7 +35,7 @@
         <span>Education</span>
       </label>
 
-      <input type="radio" id="rd-5" name="radio" class="rd-5" hidden="" />
+      <input checked="" type="radio" id="rd-5" name="radio" class="rd-5" hidden="" />
       <label for="rd-5" class="label" style="--index: 4;" data-link="projects.html">
         <span>Projects</span>
       </label>
@@ -78,29 +77,62 @@
   </header>
 
     <main>
-        <section id="hero">
-  <div class="homep-container">
-    <div class="homep-main">
-      <img src="humanai2.png" alt="Profile Photo" class="homep-photo" />
-      <div class="homep-text">
-        <h1 class="homep-name">Mandip Rijal</h1>
-        <h2 class="homep-subheading">Web Developer</h2>
-        <p class="homep-description">
-          I am a programmer passionate about coding on both front and back-end programming languages. I focus on delivering meaningful
-          solutions with a deep interest in innovation, creativity, and technology.
-        </p>
-      </div>
-    </div>
+  <style>
 
-    <div class="homep-links">
-      <a href="experiences.html" class="homep-circle-link">Resume</a>
-      <a href="projects.html" class="homep-circle-link">Projects</a>
-      <a href="education.html" class="homep-circle-link">Education</a>
-      <a href="contact.html" class="homep-circle-link">Contact</a>
-    </div>
+    a {
+      color: #FFF;
+    }
+
+    a:hover {
+      color: yellow;
+      text-decoration: underline;
+    }
+
+    .thumbnails {
+      text-align: center;
+    }
+
+    .thumbnails img {
+      height: 60px;
+      border: 4px solid #060000;
+      padding: 1px;
+      margin: 0 10px 10px 0;
+    }
+
+    .thumbnails img:hover {
+      border: 4px solid #000607;
+      cursor: pointer;
+    }
+
+    .preview {
+      text-align: center;
+    }
+
+    .preview img {
+      border: 4px solid #040000;
+      padding: 1px;
+      width: 800px;
+    }
+  </style>
+
+  <div class="thumbnails">
+    <img onmouseover="preview.src=img1.src" name="img1" src="img1.jpg" alt="Image 1"/>
+    <img onmouseover="preview.src=img2.src" name="img2" src="img2.jpg" alt="Image 2"/>
+    <img onmouseover="preview.src=img3.src" name="img3" src="img3.jpg" alt="Image 3"/>
+    <img onmouseover="preview.src=img4.src" name="img4" src="img4.png" alt="Image 4"/>
+    <img onmouseover="preview.src=img5.src" name="img5" src="img5.jpeg" alt="Image 5"/>
+    <img onmouseover="preview.src=img6.src" name="img6" src="img6.jpg" alt="Image 6"/>
+    <img onmouseover="preview.src=img7.src" name="img7" src="img7.jpg" alt="Image 7"/>
+    <img onmouseover="preview.src=img8.src" name="img8" src="img8.png" alt="Image 8"/>
+    <img onmouseover="preview.src=img9.src" name="img9" src="img9.png" alt="Image 9"/>
+    <img onmouseover="preview.src=img10.src" name="img10" src="img10.jpg" alt="Image 10"/>
+  </div><br>
+
+  <div class="preview">
+    <img name="preview" src="img1.jpg" alt="Preview"/>
   </div>
-        </section>
-    </main>
+</main>
+
 
   <div class="social-card-container">
     <div class="social-card-background"></div>
@@ -141,12 +173,6 @@
     </a>
 
   </div>
-    <section id="about-section">
-    <h2>About Us</h2>
-    <p>Some information about our company...</p>
-</section>
-
-<a href="#about-section">Go to About Us</a>
 
 </body>
 </html>

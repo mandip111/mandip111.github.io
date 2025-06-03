@@ -1,0 +1,53 @@
+
+
+/* Main blog container box */
+.mandip-container {
+  max-width: 800px;
+  margin: 40px auto 20px auto;
+  background-color: #64b5f6;
+  padding: 25px 30px;
+  border: 2px solid black;
+  border-radius: 8px;
+}
+
+/* Title and metadata */
+.mandip-title {
+  margin-bottom: 0.1em;
+  color: black;
+}
+
+.mandip-meta {
+  font-size: 0.9em;
+  color: black;
+  font-style: italic;
+  margin-bottom: 1.5em;
+}
+
+/* Section styles */
+.mandip-section {
+  margin-bottom: 30px;
+}
+
+.mandip-heading {
+  color: black;
+  margin-bottom: 10px;
+}
+
+.mandip-section p {
+  margin-bottom: 1em;
+  line-height: 1.6;
+}
+
+.mandip-section ul,
+.mandip-section ol {
+  margin-left: 20px;
+  padding-left: 10px;
+}
+
+.mandip-section li {
+  margin-bottom: 0.5em;
+}
+
+strong {
+  color: black;
+}

@@ -3,25 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name - Portfolio</title>
+    <title>About Me - Your Name</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="social.css">
-    <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="topNab.css"> <!-- Link to the topNav.css (radio button navigation styles) -->
+    <link rel="stylesheet" href="aboutpic.css">
+    <link rel="stylesheet" href="meabout.css">
+    <link rel="stylesheet" href="social.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-  <header>
+<header>
   <!-- Radio Button Navigation -->
   <input type="checkbox" id="theme-mode" class="mode" hidden="" />
   <div class="container">
     <div class="wrap">
-      <input checked="" type="radio" id="rd-1" name="radio" class="rd-1" hidden="" />
+      <input type="radio" id="rd-1" name="radio" class="rd-1" hidden="" />
       <label for="rd-1" class="label" style="--index: 0;" data-link="index.html">
         <span>Home</span>
       </label>
 
-      <input type="radio" id="rd-2" name="radio" class="rd-2" hidden="" />
+      <input checked="" type="radio" id="rd-2" name="radio" class="rd-2" hidden="" />
       <label for="rd-2" class="label" style="--index: 1;" data-link="about.html">
         <span>About</span>
       </label>
@@ -78,29 +79,37 @@
   </header>
 
     <main>
-        <section id="hero">
-  <div class="homep-container">
-    <div class="homep-main">
-      <img src="humanai2.png" alt="Profile Photo" class="homep-photo" />
-      <div class="homep-text">
-        <h1 class="homep-name">Mandip Rijal</h1>
-        <h2 class="homep-subheading">Web Developer</h2>
-        <p class="homep-description">
-          I am a programmer passionate about coding on both front and back-end programming languages. I focus on delivering meaningful
-          solutions with a deep interest in innovation, creativity, and technology.
-        </p>
-      </div>
-    </div>
-
-    <div class="homep-links">
-      <a href="experiences.html" class="homep-circle-link">Resume</a>
-      <a href="projects.html" class="homep-circle-link">Projects</a>
-      <a href="education.html" class="homep-circle-link">Education</a>
-      <a href="contact.html" class="homep-circle-link">Contact</a>
-    </div>
+<section class="me-about-wrapper">
+<div class="human-card">
+  <div class="human-remove">
   </div>
-        </section>
+  <div class="human-details">
+    <label>Mandip Rijal</label>
+    <p class="hidden-text">
+      A forever learning programming student.<br>
+      <i>ACT, Australia</i>
+    </p>
+  </div>
+</div>
+
+    <div class="me-about-text first-para">
+      <h2>About Me</h2>
+      <p>
+        Hello, my name is Mandip Rijal, a 21-year-old tech enthusiast currently living in Queanbeyan, New South Wales. I am pursuing a Bachelor’s degree in Information Systems at the Australian Institute of Technology, where I am building a strong foundation in information technology systems, web development, and data management. I am known for being a friendly person, well-organized, and detail-oriented—traits that have helped me excel in both academic and workplace settings. Outside of work and school, I enjoy drawing, traveling, and gaming, hobbies that nurture my creativity, inquisitiveness, and sense of connection.
+      </p>
+      </div>
+    <div class="me-about-text full-width">
+      <p>
+        In my professional life, I have gained hands-on experience in roles such as Data Entry Clerk, Email Support Agent, and currently as a Debugging Assistant. My experience at Licrosoft Inc. developed my expertise in accuracy and productivity regarding handling digital data, while my work at Dapple Support Systems gave me the chance to prioritize customer satisfaction through diligent and compassionate email support. At Kamazon Tech currently, I have been assisting developers by identifying and documenting software bugs using browser developer consoles and JavaScript to verify fixes—thus allowing me to participate in actual debugging in a team environment.
+      </p>
+      <p>
+        My skills include fast and accurate typing skills, over 75 words per minute, high-level proficiency in Microsoft Office software, as well as a basic understanding of HTML, CSS, and JavaScript, specifically debugging and content editing. I have a keen interest in optimizing workflows, using technology to overcome obstacles, and growing in the field of software development. As I continue my academic career and gain hands-on experience, my goal is to work on meaningful projects and evolve into a versatile IT professional—leveraging creativity developed through drawing, flexibility developed through traveling, and focus developed through gaming.
+      </p>
+    </div>
+  </section>
+
     </main>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
   <div class="social-card-container">
     <div class="social-card-background"></div>
@@ -141,12 +150,5 @@
     </a>
 
   </div>
-    <section id="about-section">
-    <h2>About Us</h2>
-    <p>Some information about our company...</p>
-</section>
-
-<a href="#about-section">Go to About Us</a>
-
 </body>
 </html>

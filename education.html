@@ -3,20 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name - Portfolio</title>
+    <link rel="stylesheet" href="education.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="social.css">
-    <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="topNab.css"> <!-- Link to the topNav.css (radio button navigation styles) -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 </head>
 <body>
-  <header>
+    <header>
   <!-- Radio Button Navigation -->
   <input type="checkbox" id="theme-mode" class="mode" hidden="" />
   <div class="container">
     <div class="wrap">
-      <input checked="" type="radio" id="rd-1" name="radio" class="rd-1" hidden="" />
+      <input type="radio" id="rd-1" name="radio" class="rd-1" hidden="" />
       <label for="rd-1" class="label" style="--index: 0;" data-link="index.html">
         <span>Home</span>
       </label>
@@ -31,7 +31,7 @@
         <span>Experiences</span>
       </label>
 
-      <input type="radio" id="rd-4" name="radio" class="rd-4" hidden="" />
+      <input checked="" type="radio" id="rd-4" name="radio" class="rd-4" hidden="" />
       <label for="rd-4" class="label" style="--index: 3;" data-link="education.html">
         <span>Education</span>
       </label>
@@ -75,31 +75,33 @@
     });
   });
   </script>
-  </header>
+</header>
 
-    <main>
-        <section id="hero">
-  <div class="homep-container">
-    <div class="homep-main">
-      <img src="humanai2.png" alt="Profile Photo" class="homep-photo" />
-      <div class="homep-text">
-        <h1 class="homep-name">Mandip Rijal</h1>
-        <h2 class="homep-subheading">Web Developer</h2>
-        <p class="homep-description">
-          I am a programmer passionate about coding on both front and back-end programming languages. I focus on delivering meaningful
-          solutions with a deep interest in innovation, creativity, and technology.
-        </p>
+ <main>
+ <section class="scroll-container">
+    <div class="card">
+      <div class="card__image" style="background-image: url('edu2.jpg');"></div>
+      <div class="card__content">
+        <span class="card__title">School</span>
+        <p class="card__describe">Balmiki Education Foundation</p>
       </div>
     </div>
-
-    <div class="homep-links">
-      <a href="experiences.html" class="homep-circle-link">Resume</a>
-      <a href="projects.html" class="homep-circle-link">Projects</a>
-      <a href="education.html" class="homep-circle-link">Education</a>
-      <a href="contact.html" class="homep-circle-link">Contact</a>
+    <div class="card">
+      <div class="card__image" style="background-image: url('edu1.jpeg');"></div>
+      <div class="card__content">
+        <span class="card__title">High School</span>
+        <p class="card__describe">Balmiki Lincoln College</p>
+      </div>
     </div>
-  </div>
-        </section>
+    <div class="card">
+      <div class="card__image" style="background-image: url('edu3.jpg');"></div>
+      <div class="card__content">
+        <span class="card__title">Bachelor</span>
+        <p class="card__describe">Wentworth Institute of Higher Education</p>
+      </div>
+    </div>
+  </section>
+
     </main>
 
   <div class="social-card-container">
@@ -141,12 +143,5 @@
     </a>
 
   </div>
-    <section id="about-section">
-    <h2>About Us</h2>
-    <p>Some information about our company...</p>
-</section>
-
-<a href="#about-section">Go to About Us</a>
-
 </body>
 </html>

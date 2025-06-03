@@ -1,0 +1,17 @@
+/* General Styles */
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color:  #0d47a1;
+    color: #333;
+}
+
+header {
+    background-color: #0c0000;
+    color: #fff;
+}
+      #contact h2 {
+        color: #0c0000;
+  text-align: center;
+}

@@ -3,20 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name - Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="social.css">
-    <link rel="stylesheet" href="index.css">
+    <title>Contact - Your Name</title>
+    <!-- Link to your main style.css -->
+      <!-- Link to the form.css (contact form styles) -->
     <link rel="stylesheet" href="topNab.css"> <!-- Link to the topNav.css (radio button navigation styles) -->
+    <link rel="stylesheet" href="form.css"> <!-- Link to the form.css (contact form styles) -->
+    <link rel="stylesheet" href="social.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+
 </head>
+
 <body>
   <header>
   <!-- Radio Button Navigation -->
   <input type="checkbox" id="theme-mode" class="mode" hidden="" />
   <div class="container">
     <div class="wrap">
-      <input checked="" type="radio" id="rd-1" name="radio" class="rd-1" hidden="" />
+      <input type="radio" id="rd-1" name="radio" class="rd-1" hidden="" />
       <label for="rd-1" class="label" style="--index: 0;" data-link="index.html">
         <span>Home</span>
       </label>
@@ -51,7 +55,7 @@
         <span>Hobbies</span>
       </label>
 
-      <input type="radio" id="rd-8" name="radio" class="rd-8" hidden="" />
+      <input checked="" type="radio" id="rd-8" name="radio" class="rd-8" hidden="" />
       <label for="rd-8" class="label" style="--index: 7;" data-link="contact.html">
         <span>Contact</span>
       </label>
@@ -77,28 +81,41 @@
   </script>
   </header>
 
-    <main>
-        <section id="hero">
-  <div class="homep-container">
-    <div class="homep-main">
-      <img src="humanai2.png" alt="Profile Photo" class="homep-photo" />
-      <div class="homep-text">
-        <h1 class="homep-name">Mandip Rijal</h1>
-        <h2 class="homep-subheading">Web Developer</h2>
-        <p class="homep-description">
-          I am a programmer passionate about coding on both front and back-end programming languages. I focus on delivering meaningful
-          solutions with a deep interest in innovation, creativity, and technology.
-        </p>
-      </div>
-    </div>
 
-    <div class="homep-links">
-      <a href="experiences.html" class="homep-circle-link">Resume</a>
-      <a href="projects.html" class="homep-circle-link">Projects</a>
-      <a href="education.html" class="homep-circle-link">Education</a>
-      <a href="contact.html" class="homep-circle-link">Contact</a>
-    </div>
-  </div>
+
+
+
+
+
+    <main>
+        <section id="contact">
+            <h2>Do You Wanna Send Me Some Feedbacks ?</h2>
+            <form id="contactForm">
+                <h1>Contact Form</h1>  <!--Moved this to style with css-->
+
+                <div class="group">
+                  <input type="text" class="input" name="name" id="name">
+                  <span class="highlight"></span>
+                  <span class="bar"></span>
+                  <label>Full Name</label>
+                </div>
+
+                <div class="group">
+                  <input type="email" class="input" name="email" id="email">
+                  <span class="highlight"></span>
+                  <span class="bar"></span>
+                  <label>Email</label>
+                </div>
+
+                <div class="group">
+                  <textarea class="input" name="feedback" id="feedback" rows="5"></textarea>
+                  <span class="highlight"></span>
+                  <span class="bar"></span>
+                  <label>Message</label>
+                </div>
+
+                <button type="submit" class="button">Submit Form</button>
+            </form>
         </section>
     </main>
 
@@ -141,12 +158,40 @@
     </a>
 
   </div>
-    <section id="about-section">
-    <h2>About Us</h2>
-    <p>Some information about our company...</p>
-</section>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const contactForm = document.getElementById("contactForm");
 
-<a href="#about-section">Go to About Us</a>
+            contactForm.addEventListener("submit", function(event) {
+                event.preventDefault(); // Prevent default form submission
 
+                const name = document.getElementById("name").value.trim();
+                const email = document.getElementById("email").value.trim();
+                const message = document.getElementById("feedback").value.trim();
+
+                let errors = [];
+
+                // Ensure no fields are left empty
+                if (!name) errors.push("Full name is required.");
+                if (!email) errors.push("Email is required.");
+                if (!message) errors.push("Message is required.");
+
+                // Email format validation
+                const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                if (email && !emailRegex.test(email)) {
+                    errors.push("Please enter a valid email address.");
+                }
+
+                // Display errors or submit the form
+                if (errors.length > 0) {
+                    alert(errors.join("\n"));
+                } else {
+                    alert("Form submitted successfully!");
+                    // Optionally, you can submit the form here by adding `this.submit();`
+                }
+            });
+        });
+    </script>
+    
 </body>
 </html>

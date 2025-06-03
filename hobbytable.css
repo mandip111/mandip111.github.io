@@ -1,0 +1,19 @@
+    .hobby-table {
+      width: 80%;
+      margin: 30px auto;
+      border-collapse: collapse;
+      background-color: #64b5f6;
+      color: black;
+      border: 2px solid black;
+      font-family: Arial, sans-serif;
+      text-align: center;
+    }
+
+    .hobby-table th, .hobby-table td {
+      padding: 15px;
+      border: 1px solid black;
+    }
+
+    .hobby-table th {
+      background-color: #42a5f5;
+    }

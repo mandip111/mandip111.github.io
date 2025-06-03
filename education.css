@@ -1,0 +1,77 @@
+.scroll-1::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+.scroll-1::-webkit-scrollbar-thumb {
+  border-radius: 20px;
+  background: #777777;
+}
+
+.scroll-container * {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  color: #fcf9f9;
+}
+
+.scroll-container {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  gap: 32px;
+  padding: 40px 24px;
+  scroll-padding: 0 24px;
+}
+
+.card {
+  flex: 0 0 70vw; /* Only one card fits at a time */
+  max-width: 70vw;
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  scroll-snap-align: center;
+  border-radius: 12px;
+  overflow: hidden;
+  background-color: #000; /* Keeps the black bottom part */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+.card .card__image {
+  height: 60%;
+  background-size: cover;
+  background-position: center;
+}
+
+.card:nth-child(1) .card__image {
+  background-image: url("edu2.jpg");
+}
+
+.card:nth-child(2) .card__image {
+  background-image: url("edu1.jpeg");
+}
+
+.card:nth-child(3) .card__image {
+  background-image: url("edu3.jpg");
+}
+
+.card .card__content {
+  height: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  padding: 20px;
+  background-color: #141414;
+}
+
+.card .card__title {
+  font-size: 28px;
+  color:  #64b5f6;
+  text-transform: capitalize;
+}
+
+.card .card__describe {
+  font-size: 16px;
+  color:  #64b5f6;
+}

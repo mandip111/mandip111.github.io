@@ -1,0 +1,37 @@
+.me-about-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  color: black;
+  align-items: flex-start;
+}
+
+.me-about-card {
+  flex: 0 0 250px; /* fixed width */
+}
+
+.me-about-text.first-para {
+  flex: 1 1 auto;
+  min-width: 300px;
+  font-size: 1.1rem;
+}
+
+.me-about-text.full-width {
+  flex-basis: 100%;
+  font-size: 1.2rem;
+}
+
+@media (max-width: 768px) {
+  .me-about-wrapper {
+    flex-direction: column;
+  }
+
+  .me-about-text.first-para,
+  .me-about-text.full-width {
+    width: 100%;
+  }
+
+  .me-about-card {
+    margin-bottom: 1rem;
+  }
+}
